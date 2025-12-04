@@ -1,0 +1,424 @@
+
+/*============ Very large Device ===========*/
+@media (min-width:1441px) and (max-width:1919px){
+    .main_menu_area {
+        padding: 0px 20px;
+    }
+}
+/*============ Desktop Device ===========*/
+@media (min-width:1366px) and (max-width:1440px){
+    .main_menu_area {
+        padding: 0px 20px;
+    }
+    /* slider area css */
+    .inner_slider_area{
+        height: 400px;
+    }
+    .inner_slider_content {
+        width: 100%;
+        margin: 50px 0;
+    }
+    .inner_slider_content h2{
+        font-size: 45px;
+    }
+    /* section title area css */
+    .section_title_area h2, .inner_about_right_area h3, .aitech_inner_title h2{
+        font-size: 40px;
+    }
+    /* inner about area css */
+    .inner_about_left_img img, .inner_faq_img img {
+        width: 100%;
+    }
+    .txmartext .txmartex a, .txmartext .txmartex {
+        font-size: 90px;
+    }
+}
+/*============ Laptop Device ===========*/
+@media (min-width:1024px) and (max-width:1365px){
+    h2, h2 a {
+        font-size: 16px;
+    }
+    .main_menu_area {
+        padding: 0px 10px;
+    }
+    .inner_main_nav_area >ul >li >a {
+        margin: 35px 11px 35px;
+        font-size: 15px;
+    }
+    .main_nav_icons, .main_nav_icon_right{
+        display: none;
+    }
+    .main_nav_btn a{
+        font-size: 14px;
+    }
+    /* slider area css */
+    .inner_slider_area{
+        height: 300px;
+    }
+    .inner_slider_content {
+        width: 100%;
+        margin: 50px 0;
+    }
+    .inner_slider_content h2{
+        font-size: 45px;
+    }
+    /* section title area css */
+    .section_title_area h2, .inner_about_right_area h3, .aitech_inner_title h2{
+        font-size: 40px;
+    }
+    /* inner about area css */
+    .inner_about_left_img img, .inner_faq_img img {
+        width: 100%;
+    }
+    .inner_about_right_list ul li a, .call_to_inner_content h3{
+        font-size: 15px;
+    }
+    .txmartext .txmartex a, .txmartext .txmartex {
+        font-size: 80px;
+    }
+    .inner_testimonial_content p{
+        font-size: 24px;
+    }
+    /* counter area css */
+    .inner_counter_sub_cont h3, .inner_counter_sub_cont span {
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .inner_counter_area h2{
+        font-size: 18px;
+    }
+}
+
+/*============= Tablet Large device ===============*/
+@media (min-width:992px) and (max-width:1023px){
+    h2, h2 a {
+        font-size: 16px;
+    }
+    h3,
+    h3 a
+    {
+        font-size: 16px;
+    }
+    .main_menu_area {
+        padding: 0px 10px;
+    }
+    .inner_main_nav_area >ul >li >a {
+        margin: 35px 11px 35px;
+        font-size: 14px;
+    }
+    .main_nav_icons, .main_nav_icon_right{
+        display: none;
+    }
+    .main_nav_btn a{
+        font-size: 14px;
+    }
+    /* slider area css */
+    .inner_slider_area{
+        height: 300px;
+    }
+    .inner_slider_content {
+        width: 100%;
+        margin: 50px 0;
+    }
+    .inner_slider_content h2{
+        font-size: 40px;
+    }
+    /* section title area css */
+    .section_title_area h2, .inner_about_right_area h3, .aitech_inner_title h2{
+        font-size: 30px;
+    }
+    .section_title_area p{
+        width: 100%;
+    }
+    .single_service_area, .inner_blog_area, .aitech_inner_title, .footer_left_area, .footer_widget,.inner_about_left_img{
+        margin-bottom: 20px;
+    }
+    .txmartext .txmartex a, .txmartext .txmartex {
+        font-size: 80px;
+    }
+    /* inner about area css */
+    .inner_about_left_img img, .inner_faq_img img {
+        width: 100%;
+    }
+    .inner_about_right_list{
+        display: block;
+    }
+    .inner_counter_area h2, .call_to_inner_content h3{
+        font-size: 20px;
+    }
+    .inner_counter_area h2{
+        font-size: 18px;
+    }
+    /* testimonial area css */
+    .inner_testimonial_content p{
+        font-size: 20px;
+        width: 100%;
+    }
+    /* counter area css */
+    .inner_counter_sub_cont h3, .inner_counter_sub_cont span {
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .aitech_flex {
+        align-items: center;
+    }
+    .footer_area {
+        padding: 60px 0 40px;
+    }
+    
+}
+
+/*============= Tablet device ===============*/
+@media (min-width:768px) and (max-width:991px){
+    h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    h1,
+    h1 a
+    {
+        font-size: 24px;
+    }
+    h2,
+    h2 a
+    {
+        font-size: 20px;
+    }
+    h3,
+    h3 a
+    {
+        font-size: 18px;
+    }
+    h4,
+    h4 a
+    {
+        font-size: 16px;
+    }
+    h5,
+    h5 a
+    {
+        font-size: 15px;
+    }
+    h6,
+    h6 a
+    {
+        font-size: 15px;
+    } 
+    .mobile_logo_area{
+        display: block !important;
+        padding: 10px 0;
+    }
+     /* main nav area css */
+     .main_menu_area{
+        display: none;
+    }
+    /* slider area css */
+    .inner_slider_area{
+        height: 300px;
+    }
+    .inner_slider_content {
+        width: 100%;
+        margin: 50px 0;
+    }
+    .inner_slider_content h2{
+        font-size: 40px;
+    }
+    .inner_slider_cont_img{
+        display: none;
+    }
+    /* section title area css */
+    .section_title_area h2, .inner_about_right_area h3, .aitech_inner_title h2{
+        font-size: 30px;
+    }
+    .section_title_area p{
+        width: 100%;
+    }
+    .single_service_area, .inner_blog_area, .aitech_inner_title, .footer_left_area, .footer_widget,.inner_about_left_img{
+        margin-bottom: 20px;
+    }
+    .txmartext .txmartex a, .txmartext .txmartex {
+        font-size: 60px;
+    }
+    /* inner about area css */
+    .inner_about_left_img img, .inner_faq_img img {
+        width: 100%;
+    }
+    .inner_about_right_list{
+        display: block;
+    }
+    testimonial area css
+    .inner_testimonial_content p{
+        font-size: 20px;
+        width: 100%;
+    }
+    .aitech_flex {
+        align-items: center;
+    }
+    /* counter area css */
+    .inner_counter_sub_cont h3, .inner_counter_sub_cont span {
+        font-size: 50px;
+        font-weight: 500;
+    }
+    /* contact form address css */
+    .contact_form_address {
+        padding: 30px 10px 15px;
+    }
+    .inner_contact_area h2{
+        font-size: 22px;
+    }
+    .con_form_add_cont h2{
+        font-size: 16px;
+    }
+    .aitech_title_bottom {
+        padding: 50px 0 50px;
+    }
+    .footer_area {
+        padding: 60px 0 40px;
+    }
+}
+
+/*============= mobile large device ===============*/
+@media (max-width:767px){
+    h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    h1,
+    h1 a
+    {
+        font-size: 22px;
+    }
+    h2,
+    h2 a
+    {
+        font-size: 18px;
+    }
+    h3,
+    h3 a
+    {
+        font-size: 16px;
+    }
+    h4,
+    h4 a
+    {
+        font-size: 15px;
+    }
+    h5,
+    h5 a
+    {
+        font-size: 15px;
+    }
+    h6,
+    h6 a
+    {
+        font-size: 15px;
+    } 
+    .mobile_logo_area{
+        display: block !important;
+        padding: 10px 0;
+    }
+     /* main nav area css */
+     .main_menu_area{
+        display: none;
+    }
+    /* slider area css */
+    .inner_slider_area{
+        height: 300px;
+    }
+    .inner_slider_content {
+        width: 100%;
+        margin: 50px 0;
+    }
+    .inner_slider_content h2{
+        font-size: 30px;
+    }
+    .inner_slider_cont_img{
+        display: none;
+    }
+    /* section title area css */
+    .section_title_area h2, .inner_about_right_area h3, .aitech_inner_title h2{
+        font-size: 30px;
+    }
+    .section_title_area p{
+        width: 100%;
+    }
+    .single_service_area, .inner_blog_area, .aitech_inner_title, .footer_left_area, .footer_widget,.inner_about_left_img{
+        margin-bottom: 20px;
+    }
+    .single_service_area.service_2{
+        margin-top: 0;
+    }
+    .txmartext .txmartex a, .txmartext .txmartex {
+        font-size: 50px;
+    }
+    /* inner about area css */
+    .inner_about_left_img img, .inner_faq_img img {
+        width: 100%;
+    }
+    .inner_about_right_list{
+        display: block;
+    }
+    /* testimonial area css */
+    .inner_testimonial_content p{
+        font-size: 17px;
+        width: 100%;
+    }
+    .aitech_inner_title {
+        text-align: center;
+    }
+    .inner_counter_sub_cont h3, .inner_counter_sub_cont span {
+        font-size: 50px;
+        font-weight: 500;
+    }
+    /* contact form address css */
+    .contact_form_address {
+        padding: 30px 10px 15px;
+    }
+    .con_add_form_thumb {
+        display: block;
+        text-align: center;
+    }
+    .inner_contact_area h2{
+        font-size: 22px;
+    }
+
+
+/*============= mobile device ===============*/
+@media (min-width:320px) and (max-width:480px){
+    .slider_width{
+        padding: 0 20px;
+    }
+    .a_btn a{
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    /* section title area css */
+    .section_title_area h2, .inner_about_right_area h3, .aitech_inner_title h2{
+        font-size: 20px;
+    }
+    .inner_about_right_list ul li a, .inner_about_right_link a{
+        font-size: 16px;
+    }
+    .inner_counter_area h2{
+        font-size: 18px;
+    }
+    .service_area {
+        padding: 20px 0 100px;
+    }
+    /* call to action css */
+    .call_to_inner_content{
+        display: block;
+    }
+    .call_to_inner_content span{
+        margin-left: 0;
+    }
+    .aitech_title_bottom {
+        padding: 50px 0 50px;
+    }
+    /* foote area css */
+    .footer_area {
+        padding: 50px 0 40px;
+        text-align: center;
+    }
+}
+}
