@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eantrax.com/sitemap.xml
