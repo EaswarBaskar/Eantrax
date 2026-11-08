@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -138,11 +138,11 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="service.html">Services <i class="fas fa-chevron-down"></i></a>
                                         <ul class="sub_menu">
-                                            <li><a href="service - Web development.html">Web Development</a></li>
-                                            <li><a href="service - Software development.html">Software Development</a>
+                                            <li><a href="website-development-chennai.html">Web Development</a></li>
+                                            <li><a href="custom-software-development.html">Software Development</a>
                                             </li>
-                                            <li><a href="service - app development.html">App Development</a></li>
-                                            <li><a href="service - ai services.html">AI Automation</a></li>
+                                            <li><a href="mobile-app-development.html">App Development</a></li>
+                                            <li><a href="ai-automation-chennai.html">AI Automation</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
@@ -175,10 +175,10 @@
                 <li class="has_sub_menu">
                     <a href="service.html">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="mobile_sub_menu">
-                        <li><a href="service - Web development.html">Web Development</a></li>
-                        <li><a href="service - Software development.html">Software Development</a></li>
-                        <li><a href="service - app development.html">App Development</a></li>
-                        <li><a href="service - ai services.html">AI Automation</a></li>
+                        <li><a href="website-development-chennai.html">Web Development</a></li>
+                        <li><a href="custom-software-development.html">Software Development</a></li>
+                        <li><a href="mobile-app-development.html">App Development</a></li>
+                        <li><a href="ai-automation-chennai.html">AI Automation</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
@@ -283,16 +283,16 @@
                     headers: { 'Accept': 'application/json' }
                 });
                 if (response.ok) {
-                    formMessages.textContent = "✅ Message sent successfully! We'll get back to you soon.";
+                    formMessages.textContent = "âœ… Message sent successfully! We'll get back to you soon.";
                     formMessages.style.color = "#28a745";
                     this.reset();
                 } else {
                     const data = await response.json();
-                    formMessages.textContent = "❌ " + (data.errors ? data.errors.map(err => err.message).join(', ') : 'Something went wrong. Please try again.');
+                    formMessages.textContent = "âŒ " + (data.errors ? data.errors.map(err => err.message).join(', ') : 'Something went wrong. Please try again.');
                     formMessages.style.color = "#dc3545";
                 }
             } catch (err) {
-                formMessages.textContent = "❌ Network error. Please check your connection and try again.";
+                formMessages.textContent = "âŒ Network error. Please check your connection and try again.";
                 formMessages.style.color = "#dc3545";
             }
 
@@ -322,10 +322,10 @@
                         <h2>Categories</h2>
                         <div class="footer_nav">
                             <ul>
-                                <li><a href="service - Web development.html">Web Development</a></li>
-                                <li><a href="service - Software development.html">Software Development</a></li>
-                                <li><a href="service - app development.html">App Development</a></li>
-                                <li><a href="service - ai services.html">AI Process Automation</a></li>
+                                <li><a href="website-development-chennai.html">Web Development</a></li>
+                                <li><a href="custom-software-development.html">Software Development</a></li>
+                                <li><a href="mobile-app-development.html">App Development</a></li>
+                                <li><a href="ai-automation-chennai.html">AI Process Automation</a></li>
                             </ul>
                         </div>
                     </div>
@@ -368,7 +368,7 @@
                 <!-- copyright text -->
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="copyright_text text-center">
-                        <p>Copyright ©eantrax all right reserved.</p>
+                        <p>Copyright Â©eantrax all right reserved.</p>
                     </div>
                 </div>
             </div>

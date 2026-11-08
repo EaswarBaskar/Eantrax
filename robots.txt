@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# GEO: Generative Engine Optimization (AI Search Crawlers)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://eantrax.com/sitemap.xml
