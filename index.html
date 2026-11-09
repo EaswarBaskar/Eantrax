@@ -185,14 +185,7 @@
                                             <li><a href="ai-automation-chennai.html">AI Automation</a></li>
                                         </ul>
                                     </li>
-                                    <li style="display: none;"><a href="#">Products <i
-                                                class="fas fa-chevron-down"></i></a>
-                                        <ul class="sub_menu">
-                                            <li><a href="#">Photo Selection App</a></li>
-                                            <li><a href="#">Quotation Manager</a></li>
-                                            <li><a href="#">Fitness App</a></li>
-                                        </ul>
-                                    </li>
+                                    
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
@@ -200,9 +193,9 @@
                                 <a href="contact.html" class="btn_header">Book Strategy Call</a>
                             </div>
                             <!-- Mobile Toggle -->
-                            <div class="mobile_menu_o d-lg-none">
+                            <button class="mobile_menu_o d-lg-none" aria-label="Toggle mobile menu" aria-expanded="false" type="button" style="background:transparent; border:none; padding:8px; color:#fff;">
                                 <i class="fas fa-bars openclass"></i>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -213,7 +206,7 @@
 
     <!-- Mobile Sidebar -->
     <div class="mobile_menu_inner">
-        <div class="mobile_close_btn closeclass"><i class="fas fa-times"></i></div>
+        <button class="mobile_close_btn closeclass" aria-label="Close mobile menu" type="button" style="background:transparent; border:none; padding:8px; color:#fff;"><i class="fas fa-times"></i></button>
         <div class="mobile_menu_logo">
             <a href="index.html"><img src="assets/img/logo-02.png" alt="Eantrax Logo"></a>
         </div>
@@ -229,14 +222,7 @@
                         <li><a href="ai-automation-chennai.html">AI Automation</a></li>
                     </ul>
                 </li>
-                <li class="has_sub_menu" style="display: none;">
-                    <a href="#">Products <i class="fas fa-chevron-down"></i></a>
-                    <ul class="mobile_sub_menu">
-                        <li><a href="#">Photo Selection App</a></li>
-                        <li><a href="#">Quotation Manager</a></li>
-                        <li><a href="#">Fitness App</a></li>
-                    </ul>
-                </li>
+                
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -295,16 +281,16 @@
         }
 
         .main_menu_area:not(.sticky) .nav_btn_area .btn_header {
-            background: rgba(255, 255, 255, 0.1) !important;
+            background: rgba(37, 99, 235, 0.2) !important;
             color: #fff !important;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+            border: 1px solid rgba(56, 189, 248, 0.4) !important;
         }
 
         .main_menu_area:not(.sticky) .nav_btn_area .btn_header:hover {
-            background: #fff !important;
-            color: #000 !important;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            background: #38bdf8 !important;
+            color: #070a12 !important;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
         }
 
         .main_menu_area:not(.sticky) div .openclass {
@@ -313,40 +299,41 @@
         }
 
         /* Dark Mode Dropdown Overrides on Hero */
-        .main_menu_area:not(.sticky) .inner_main_nav_area ul .sub_menu {
-            background: rgba(6, 9, 18, 0.95) !important;
+        .main_menu_area .inner_main_nav_area ul .sub_menu {
+            background: rgba(7, 10, 18, 0.95) !important;
             backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.05) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
             border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
             padding: 5px;
         }
 
-        .main_menu_area:not(.sticky) .inner_main_nav_area ul .sub_menu li a {
-            color: rgba(255, 255, 255, 0.7) !important;
+        .main_menu_area .inner_main_nav_area ul .sub_menu li a {
+            color: rgba(241, 245, 249, 0.8) !important;
             padding: 10px 20px !important;
             text-transform: none;
             display: block;
             border-radius: 6px;
         }
 
-        .main_menu_area:not(.sticky) .inner_main_nav_area ul .sub_menu li a:hover {
+        .main_menu_area .inner_main_nav_area ul .sub_menu li a:hover {
             color: #fff !important;
-            background: rgba(56, 169, 255, 0.15) !important;
+            background: rgba(56, 189, 248, 0.15) !important;
             text-shadow: none;
         }
 
-        /* Dynamic Sticky Menu Styling when scrolling outside the hero */
+        /* Dynamic Sticky Menu Styling when scrolling outside the hero (Seamless Dark Mode) */
         .main_menu_area.sticky {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(7, 10, 18, 0.92) !important;
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
             padding: 10px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
         }
 
         .main_menu_area.sticky .inner_main_nav_area ul li a {
-            color: #111 !important;
+            color: #F1F5F9 !important;
             font-family: 'Space Mono', monospace;
             font-size: 14px;
             text-transform: uppercase;
@@ -355,16 +342,37 @@
         }
 
         .main_menu_area.sticky .inner_main_nav_area ul li a:hover {
-            color: #38a9ff !important;
+            color: #38bdf8 !important;
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+        }
+
+        .main_menu_area.sticky .inner_main_nav_area ul li i {
+            color: rgba(255, 255, 255, 0.5) !important;
         }
 
         .main_menu_area.sticky .logo-main {
-            filter: none;
+            filter: brightness(0) invert(1) !important;
             max-height: 40px;
         }
 
+        .main_menu_area.sticky .nav_btn_area .btn_header {
+            background: #2563eb !important;
+            color: #ffffff !important;
+            border: 1px solid #38bdf8 !important;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .main_menu_area.sticky .nav_btn_area .btn_header:hover {
+            background: #38bdf8 !important;
+            color: #070a12 !important;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+        }
+
         .main_menu_area.sticky div .openclass {
-            color: #111 !important;
+            color: #F1F5F9 !important;
             font-size: 28px;
         }
 
@@ -614,19 +622,22 @@
             font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
-            background: var(--cc-color, #fff);
-            color: #000;
-            border: none;
+            background: #2563eb;
+            color: #ffffff;
+            border: 1px solid #38bdf8;
             position: relative;
             overflow: hidden;
             cursor: none;
-            transition: background-color 1s, transform 0.3s;
+            transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
             text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
         }
 
         .hl-btn:hover {
             transform: translateY(-5px);
-            color: #000;
+            background: #38bdf8;
+            color: #070a12;
+            box-shadow: 0 8px 25px rgba(56, 189, 248, 0.6);
         }
 
         .hl-btn-outline {
@@ -673,7 +684,8 @@
             font-weight: 700;
             line-height: 1;
             margin-bottom: 5px;
-            color: var(--cc-color, #fff);
+            color: #10b981 !important;
+            text-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
             transition: color 1s;
         }
 
@@ -781,6 +793,57 @@
             .custom-cursor {
                 display: none !important;
             }
+
+            .glass-stats {
+                display: flex !important;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+                margin: 24px 0 0;
+                padding: 16px 12px;
+                min-width: 0;
+                gap: 10px;
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(15px);
+                border-radius: 12px;
+            }
+
+            .stat-box {
+                text-align: center;
+            }
+
+            .stat-val {
+                font-size: 26px !important;
+                color: #10b981 !important;
+            }
+
+            .stat-lbl {
+                font-size: 10px !important;
+            }
+        }
+
+        .hero-slide-dots {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+            align-items: center;
+        }
+
+        .slide-dot {
+            width: 32px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.25);
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+            padding: 0;
+        }
+
+        .slide-dot.active {
+            width: 55px;
+            background: var(--cc-color, #38bdf8);
+            box-shadow: 0 0 12px var(--cc-color, #38bdf8);
         }
     </style>
 
@@ -832,15 +895,23 @@
                         <span id="badgeT">Eantrax Operations-Driven AI</span>
                     </div>
                     <div class="bebas-hl-group">
-                        <h1 class="bebas-hl hl-solid" id="hlL1">AI & AUTOMATION</h1>
-                        <div class="bebas-hl hl-outline" id="hlL2">FOR SCALING</div>
-                        <div class="bebas-hl hl-gradient" id="hlL3">GLOBAL BUSINESSES</div>
+                        <h1 class="bebas-hl" style="margin: 0; line-height: 0.88;">
+                            <span class="d-block hl-solid" id="hlL1">AI &amp; AUTOMATION</span>
+                            <span class="d-block hl-outline" id="hlL2">FOR SCALING</span>
+                            <span class="d-block hl-gradient" id="hlL3">GLOBAL BUSINESSES</span>
+                        </h1>
                     </div>
 
                     <p class="hl-sub" id="hlSub">At Eantrax, we engineer intelligent AI automation systems and custom software that eliminate manual work and accelerate business growth.</p>
 
                     <div class="hl-btns">
-                        <a href="contact.html" class="hl-btn" id="hlBtn1">Book Strategy Call</a>
+                        <a href="contact.html" class="hl-btn hl-btn-primary" id="hlBtn1">Book Strategy Call</a>
+                        <a href="#core-services" class="hl-btn hl-btn-outline" id="hlBtn2">Explore Solutions &darr;</a>
+                    </div>
+
+                    <div class="hero-slide-dots">
+                        <button class="slide-dot active" aria-label="Go to Slide 1" data-slide="0"></button>
+                        <button class="slide-dot" aria-label="Go to Slide 2" data-slide="1"></button>
                     </div>
                 </div>
 
@@ -867,22 +938,46 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
         <script>
+            // Single Optimized WebGL Vanta Background
+            let vantaEffect = null;
             document.addEventListener('DOMContentLoaded', () => {
-                if (typeof VANTA !== 'undefined') {
-                    VANTA.NET({
-                        el: "#vanta-bg-0",
-                        mouseControls: true, touchControls: true, gyroControls: false,
-                        minHeight: 200, minWidth: 200, scale: 1, scaleMobile: 1,
-                        color: 0x38a9ff, backgroundColor: 0x060912,
-                        points: 15, maxDistance: 22, spacing: 18
-                    });
-                    VANTA.NET({
-                        el: "#vanta-bg-1",
-                        mouseControls: true, touchControls: true, gyroControls: false,
-                        minHeight: 200, minWidth: 200, scale: 1, scaleMobile: 1,
-                        color: 0xa938ff, backgroundColor: 0x0d0612,
-                        points: 12, maxDistance: 24, spacing: 20
-                    });
+                if (typeof VANTA !== 'undefined' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                    try {
+                        vantaEffect = VANTA.NET({
+                            el: "#vanta-bg-0",
+                            mouseControls: true,
+                            touchControls: false,
+                            gyroControls: false,
+                            minHeight: 200,
+                            minWidth: 200,
+                            scale: 1,
+                            scaleMobile: 0.8,
+                            color: 0x38bdf8,
+                            backgroundColor: 0x070a12,
+                            points: 13,
+                            maxDistance: 22,
+                            spacing: 18
+                        });
+
+                        // Pause Vanta rendering when scrolled out of viewport for max performance
+                        const heroEl = document.getElementById('customHero');
+                        if (heroEl && 'IntersectionObserver' in window) {
+                            const vantaObserver = new IntersectionObserver((entries) => {
+                                entries.forEach(entry => {
+                                    if (vantaEffect && vantaEffect.renderer) {
+                                        if (entry.isIntersecting) {
+                                            if (vantaEffect.resume) vantaEffect.resume();
+                                        } else {
+                                            if (vantaEffect.pause) vantaEffect.pause();
+                                        }
+                                    }
+                                });
+                            }, { threshold: 0.05 });
+                            vantaObserver.observe(heroEl);
+                        }
+                    } catch (e) {
+                        console.warn('WebGL init error:', e);
+                    }
                 }
             });
         </script>
@@ -890,32 +985,42 @@
     <!-- hero area end -->
 
     <script>
-        // Logic for Custom Hero
+        // High-Performance Hero Logic (Zero Scroll-Jacking)
         document.addEventListener('DOMContentLoaded', () => {
             const hero = document.getElementById('customHero');
             if (!hero) return;
 
             const slides = [
                 {
-                    color: '#38a9ff', // Eantrax Blue
+                    color: '#38bdf8',
+                    colorNum: 0x38bdf8,
+                    bgNum: 0x070a12,
                     badge: 'Eantrax Operations-Driven AI',
                     h1L1: 'AI & AUTOMATION',
                     h1L2: 'FOR SCALING',
                     h1L3: 'GLOBAL BUSINESSES',
-                    sub: 'At Eantrax, we engineer intelligent AI automation systems and software that eliminate manual work.',
+                    sub: 'At Eantrax, we engineer intelligent AI automation systems and custom software that eliminate manual work and accelerate business growth.',
                     btn1: 'Book Strategy Call',
+                    btn1Link: 'contact.html',
+                    btn2: 'Explore Solutions ↓',
+                    btn2Link: '#core-services',
                     s1: '35%', s1L: 'Faster Diagnostics',
                     s2: '40%', s2L: 'Lower Admin Workload',
                     s3: '20%', s3L: 'Revenue Growth'
                 },
                 {
-                    color: '#a938ff', // Deep Purple
+                    color: '#8b5cf6',
+                    colorNum: 0x8b5cf6,
+                    bgNum: 0x0c0714,
                     badge: 'Eantrax Web Solutions',
                     h1L1: 'ZERO FRICTION',
                     h1L2: 'WEB SOLUTIONS',
                     h1L3: 'MAXIMUM ROI',
-                    sub: 'Eantrax designs and engineers high-performance web applications and custom software that drive measurable ROI.',
+                    sub: 'Eantrax designs and engineers high-performance web applications, mobile platforms, and enterprise software that drive measurable ROI.',
                     btn1: 'Explore Dev',
+                    btn1Link: 'website-development-chennai.html',
+                    btn2: 'View Case Studies ↓',
+                    btn2Link: '#core-services',
                     s1: '2x', s1L: 'Conversion Rate',
                     s2: '50ms', s2L: 'Interaction Delay',
                     s3: '100%', s3L: 'Scalable Arch'
@@ -925,6 +1030,7 @@
             let current = 0;
             const track = document.getElementById('bgTrack');
             const panTargets = document.querySelectorAll('.pan-target');
+            const dots = document.querySelectorAll('.slide-dot');
 
             // DOM bindings
             const els = {
@@ -934,124 +1040,142 @@
                 h3: document.getElementById('hlL3'),
                 sub: document.getElementById('hlSub'),
                 b1: document.getElementById('hlBtn1'),
+                b2: document.getElementById('hlBtn2'),
                 sv1: document.getElementById('stat1V'), sl1: document.getElementById('stat1L'),
                 sv2: document.getElementById('stat2V'), sl2: document.getElementById('stat2L'),
                 sv3: document.getElementById('stat3V'), sl3: document.getElementById('stat3L')
             };
 
-            // Custom Cursor
+            // Custom Cursor with physics & touch guard
             const cursor = document.getElementById('cCursor');
-            document.addEventListener('mousemove', e => {
-                cursor.style.left = e.clientX + 'px';
-                cursor.style.top = e.clientY + 'px';
-            });
-            // Hover scale logic using global body capture to avoid missing dynamically bound elements
-            document.body.addEventListener('mouseover', e => {
-                if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.classList.contains('hl-btn')) {
-                    cursor.style.transform = 'translate(-50%, -50%) scale(3.5)';
-                    cursor.style.backgroundColor = 'transparent';
-                    cursor.style.border = '1px solid rgba(255,255,255,0.5)';
-                }
-            });
-            document.body.addEventListener('mouseout', e => {
-                if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.classList.contains('hl-btn')) {
-                    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-                    cursor.style.backgroundColor = 'var(--cc-color, #fff)';
-                    cursor.style.border = 'none';
-                }
-            });
+            if (cursor && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+                let mouseX = 0, mouseY = 0;
+                let cursorX = 0, cursorY = 0;
 
-            // Parallax
-            const parallaxImgs = document.querySelectorAll('.parallax-img');
-            hero.addEventListener('mousemove', e => {
-                const x = (e.clientX / window.innerWidth - 0.5);
-                const y = (e.clientY / window.innerHeight - 0.5);
-                parallaxImgs.forEach(img => {
-                    const depth = parseFloat(img.getAttribute('data-depth')) || 0.05;
-                    // Native inline style smooth transitions map via CSS, JS handles position inject
-                    img.style.transform = `translate(${x * depth * 300}px, ${y * depth * 300}px) scale(1.15)`;
+                window.addEventListener('mousemove', e => {
+                    mouseX = e.clientX;
+                    mouseY = e.clientY;
+                }, { passive: true });
+
+                function updateCursor() {
+                    cursorX += (mouseX - cursorX) * 0.2;
+                    cursorY += (mouseY - cursorY) * 0.2;
+                    cursor.style.left = cursorX + 'px';
+                    cursor.style.top = cursorY + 'px';
+                    requestAnimationFrame(updateCursor);
+                }
+                requestAnimationFrame(updateCursor);
+
+                document.body.addEventListener('mouseover', e => {
+                    if (e.target.closest('a') || e.target.closest('button') || e.target.classList.contains('hl-btn')) {
+                        cursor.style.transform = 'translate(-50%, -50%) scale(3)';
+                        cursor.style.backgroundColor = 'transparent';
+                        cursor.style.border = '1px solid rgba(56,169,255,0.7)';
+                    }
                 });
-            });
+                document.body.addEventListener('mouseout', e => {
+                    if (e.target.closest('a') || e.target.closest('button') || e.target.classList.contains('hl-btn')) {
+                        cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                        cursor.style.backgroundColor = 'var(--cc-color, #fff)';
+                        cursor.style.border = 'none';
+                    }
+                });
+            }
 
-            // Navigation (wheel, arrow layout)
+            // Slide Navigation
             let isAnimating = false;
 
-            function setSlide(index, dir) {
+            function setSlide(index, dir = 1) {
                 if (index < 0 || index >= slides.length || isAnimating) return;
                 isAnimating = true;
                 current = index;
                 const d = slides[current];
 
-                // Track slide horizontally
-                track.style.transform = `translateX(-${current * 100}vw)`;
-
                 // Update Theme Color
                 hero.style.setProperty('--cc-color', d.color);
 
-                // Forced Reflow Pan Down/Up Content
-                const panOffset = dir > 0 ? '60px' : '-60px';
+                // Update Vanta color dynamically
+                if (vantaEffect && vantaEffect.setOptions) {
+                    try {
+                        vantaEffect.setOptions({
+                            color: d.colorNum,
+                            backgroundColor: d.bgNum
+                        });
+                    } catch (err) {}
+                }
+
+                // Update dots
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === current);
+                });
+
+                // Pan animation for text
+                const panOffset = dir > 0 ? '40px' : '-40px';
 
                 panTargets.forEach(el => {
-                    // Remove transition for instant clear
                     el.style.transition = 'none';
                     el.style.transform = `translateY(${panOffset})`;
                     el.style.opacity = '0';
                 });
 
-                // Swap Content Now
                 setTimeout(() => {
-                    els.badge.textContent = d.badge;
-                    els.h1.textContent = d.h1L1;
-                    els.h2.textContent = d.h1L2;
-                    els.h3.textContent = d.h1L3;
-                    els.sub.textContent = d.sub;
-                    els.b1.textContent = d.btn1;
-                    els.sv1.textContent = d.s1; els.sl1.textContent = d.s1L;
-                    els.sv2.textContent = d.s2; els.sl2.textContent = d.s2L;
-                    els.sv3.textContent = d.s3; els.sl3.textContent = d.s3L;
+                    if (els.badge) els.badge.textContent = d.badge;
+                    if (els.h1) els.h1.textContent = d.h1L1;
+                    if (els.h2) els.h2.textContent = d.h1L2;
+                    if (els.h3) els.h3.textContent = d.h1L3;
+                    if (els.sub) els.sub.textContent = d.sub;
+                    if (els.b1) {
+                        els.b1.textContent = d.btn1;
+                        els.b1.href = d.btn1Link;
+                    }
+                    if (els.b2) {
+                        els.b2.textContent = d.btn2;
+                        els.b2.href = d.btn2Link;
+                    }
+                    if (els.sv1) els.sv1.textContent = d.s1;
+                    if (els.sl1) els.sl1.textContent = d.s1L;
+                    if (els.sv2) els.sv2.textContent = d.s2;
+                    if (els.sl2) els.sl2.textContent = d.s2L;
+                    if (els.sv3) els.sv3.textContent = d.s3;
+                    if (els.sl3) els.sl3.textContent = d.s3L;
 
                     panTargets.forEach(el => {
-                        // Force reflow
-                        void el.offsetHeight;
-                        // Add transition back
-                        el.style.transition = 'transform 0.8s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.8s ease';
+                        void el.offsetHeight; // reflow
+                        el.style.transition = 'transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.7s ease';
                         el.style.transform = 'translateY(0)';
                         el.style.opacity = '1';
                     });
 
-                    setTimeout(() => { isAnimating = false; }, 800);
+                    setTimeout(() => { isAnimating = false; }, 700);
                 }, 30);
             }
 
-            // Scroll
-            hero.addEventListener('wheel', e => {
-                if (isAnimating) return;
-                if (e.deltaY > 0 && current < slides.length - 1) {
-                    e.preventDefault();
-                    setSlide(current + 1, 1);
-                }
-                else if (e.deltaY < 0 && current > 0) {
-                    e.preventDefault();
-                    setSlide(current - 1, -1);
-                }
-            }, { passive: false });
-
-            // Arrow keys
-            document.addEventListener('keydown', e => {
-                if (e.key === 'ArrowRight' || e.key === 'ArrowDown') setSlide(current + 1, 1);
-                else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') setSlide(current - 1, -1);
+            // Dot navigation clicks
+            dots.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const idx = parseInt(btn.getAttribute('data-slide'));
+                    if (idx !== current) setSlide(idx, idx > current ? 1 : -1);
+                });
             });
 
-            // Swipe
-            let touchStartX = 0;
-            hero.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX, { passive: true });
-            hero.addEventListener('touchend', e => {
-                let touchEndX = e.changedTouches[0].screenX;
-                if (touchStartX - touchEndX > 50) setSlide(current + 1, 1);
-                if (touchEndX - touchStartX > 50) setSlide(current - 1, -1);
-            }, { passive: true });
+            // Keyboard navigation (Arrow keys only, NO scroll-jacking wheel)
+            document.addEventListener('keydown', e => {
+                if (e.key === 'ArrowRight') setSlide(current + 1, 1);
+                else if (e.key === 'ArrowLeft') setSlide(current - 1, -1);
+            });
 
-            // Init first load
+            // Gentle Auto-Slide with hover pause
+            let isHovered = false;
+            hero.addEventListener('mouseenter', () => isHovered = true);
+            hero.addEventListener('mouseleave', () => isHovered = false);
+
+            setInterval(() => {
+                if (!isHovered && !isAnimating) {
+                    setSlide((current + 1) % slides.length, 1);
+                }
+            }, 8500);
+
+            // Init first slide
             hero.style.setProperty('--cc-color', slides[0].color);
         });
     </script>
@@ -1079,7 +1203,7 @@
 
     <div class="img_bg neural_grid_bg" style="background-image: url(assets/img/body-image.png);">
         <!-- service area start -->
-        <section class="service_area wow fadeInUp" data-wow-delay=".5s">
+        <section class="service_area" id="core-services">
             <div class="container service_width">
                 <div class="row mb-5">
                     <div class="col-12 text-center">
@@ -1093,9 +1217,9 @@
                 <div class="row g-4">
                     <!-- single service col -->
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="single_service_area text-center wow fadeInUp" data-wow-delay=".2s">
+                        <div class="single_service_area text-center">
                             <img src="assets/img/ai-feturicon.png" alt="Web Development Icon" loading="lazy">
-                            <h2><a href="website-development-chennai.html">Web Development</a></h2>
+                            <h3><a href="website-development-chennai.html">Web Development</a></h3>
                             <p> We design and develop high-performance, SEO-friendly websites tailored to your business
                                 needs. </p>
                             <a href="website-development-chennai.html" class="btn_service">Explore Solution</a>
@@ -1103,9 +1227,9 @@
                     </div>
                     <!-- single service col -->
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="single_service_area text-center wow fadeInUp" data-wow-delay=".3s">
+                        <div class="single_service_area text-center">
                             <img src="assets/img/ai-feturicon2.png" alt="Software Development Icon" loading="lazy">
-                            <h2><a href="custom-software-development.html">Software Development</a></h2>
+                            <h3><a href="custom-software-development.html">Software Development</a></h3>
                             <p>Custom software solutions to automate processes, enhance efficiency, and scale your
                                 business.</p>
                             <a href="custom-software-development.html" class="btn_service">Explore Solution</a>
@@ -1113,9 +1237,9 @@
                     </div>
                     <!-- single service col -->
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="single_service_area text-center wow fadeInUp" data-wow-delay=".4s">
+                        <div class="single_service_area text-center">
                             <img src="assets/img/ai-feturicon3.png" alt="App Development Icon" loading="lazy">
-                            <h2><a href="mobile-app-development.html">App Development</a></h2>
+                            <h3><a href="mobile-app-development.html">App Development</a></h3>
                             <p>User-friendly mobile and web apps with seamless functionality and modern UI/UX design.
                             </p>
                             <a href="mobile-app-development.html" class="btn_service">Explore Solution</a>
@@ -1123,9 +1247,9 @@
                     </div>
                     <!-- single service col -->
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="single_service_area text-center wow fadeInUp" data-wow-delay=".5s">
+                        <div class="single_service_area text-center">
                             <img src="assets/img/ai-feturicon4.png" alt="AI Process Automation Icon" loading="lazy">
-                            <h2><a href="ai-automation-chennai.html">AI Automation</a></h2>
+                            <h3><a href="ai-automation-chennai.html">AI Automation</a></h3>
                             <p>Advanced AI solutions, including automation, chatbots, and data-driven insights to
                                 optimize operations. </p>
                             <a href="ai-automation-chennai.html" class="btn_service">Explore Solution</a>
@@ -1165,7 +1289,7 @@
                             <strong>Smart Diagnostic Assistant:</strong> Engineered an intelligent diagnostic and fault-isolation system for heavy commercial vehicle retarders, empowering service technicians to troubleshoot complex issues <strong>35% faster</strong> with zero guesswork.
                         </p>
                         <div class="mt-auto pt-3" style="border-top: 1px solid rgba(255,255,255,0.08);">
-                            <span style="color: rgba(255,255,255,0.5); font-size: 12px;"><i class="fas fa-check-circle" style="color: #38a9ff; margin-right: 6px;"></i> Reduced Vehicle Downtime</span>
+                            <span style="color: rgba(255,255,255,0.7); font-size: 12px;"><i class="fas fa-check-circle" style="color: #10b981; margin-right: 6px;"></i> Reduced Vehicle Downtime</span>
                         </div>
                     </div>
                 </div>
@@ -1174,11 +1298,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100 p-4" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; transition: transform 0.3s ease;">
                         <div class="d-flex align-items-center mb-3">
-                            <div style="width: 48px; height: 48px; border-radius: 10px; background: rgba(112, 0, 255, 0.15); display: flex; align-items: center; justify-content: center; margin-right: 14px;">
-                                <i class="fas fa-bolt" style="color: #a938ff; font-size: 22px;"></i>
+                            <div style="width: 48px; height: 48px; border-radius: 10px; background: rgba(139, 92, 246, 0.15); display: flex; align-items: center; justify-content: center; margin-right: 14px;">
+                                <i class="fas fa-bolt" style="color: #8b5cf6; font-size: 22px;"></i>
                             </div>
                             <div>
-                                <span style="color: #a938ff; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Workflow Automation</span>
+                                <span style="color: #8b5cf6; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Workflow Automation</span>
                                 <h3 style="color: #fff; font-size: 20px; font-weight: 700; margin: 0;">Enterprise Approval Engine</h3>
                             </div>
                         </div>
@@ -1186,7 +1310,7 @@
                             <strong>Multi-Tier Process Modernization:</strong> Implemented end-to-end Microsoft Power Automate pipelines connecting ERP systems with automated purchase order, invoice, and Capex approvals—slashing manual administrative overhead by <strong>40%</strong>.
                         </p>
                         <div class="mt-auto pt-3" style="border-top: 1px solid rgba(255,255,255,0.08);">
-                            <span style="color: rgba(255,255,255,0.5); font-size: 12px;"><i class="fas fa-check-circle" style="color: #a938ff; margin-right: 6px;"></i> 100% Audit Compliance</span>
+                            <span style="color: rgba(255,255,255,0.7); font-size: 12px;"><i class="fas fa-check-circle" style="color: #10b981; margin-right: 6px;"></i> 100% Audit Compliance</span>
                         </div>
                     </div>
                 </div>
@@ -1195,11 +1319,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100 p-4" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; transition: transform 0.3s ease;">
                         <div class="d-flex align-items-center mb-3">
-                            <div style="width: 48px; height: 48px; border-radius: 10px; background: rgba(56, 169, 255, 0.15); display: flex; align-items: center; justify-content: center; margin-right: 14px;">
-                                <i class="fas fa-chart-pie" style="color: #38a9ff; font-size: 22px;"></i>
+                            <div style="width: 48px; height: 48px; border-radius: 10px; background: rgba(56, 189, 248, 0.15); display: flex; align-items: center; justify-content: center; margin-right: 14px;">
+                                <i class="fas fa-chart-pie" style="color: #38bdf8; font-size: 22px;"></i>
                             </div>
                             <div>
-                                <span style="color: #38a9ff; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Business Intelligence</span>
+                                <span style="color: #38bdf8; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Business Intelligence</span>
                                 <h3 style="color: #fff; font-size: 20px; font-weight: 700; margin: 0;">Executive BI Dashboards</h3>
                             </div>
                         </div>
@@ -1207,7 +1331,7 @@
                             <strong>Operational Data Centralization:</strong> Designed unified Power BI dashboards connecting manufacturing shop-floor data, procurement metrics, and financial reporting into real-time interactive views for leadership decision-making.
                         </p>
                         <div class="mt-auto pt-3" style="border-top: 1px solid rgba(255,255,255,0.08);">
-                            <span style="color: rgba(255,255,255,0.5); font-size: 12px;"><i class="fas fa-check-circle" style="color: #38a9ff; margin-right: 6px;"></i> Real-Time Visibility</span>
+                            <span style="color: rgba(255,255,255,0.7); font-size: 12px;"><i class="fas fa-check-circle" style="color: #10b981; margin-right: 6px;"></i> Real-Time Visibility</span>
                         </div>
                     </div>
                 </div>
@@ -1305,12 +1429,14 @@
         </div>
     </section>
     <style>
-        /* ===== Clients Marquee Section ===== */
+        /* ===== Clients Marquee Section (Seamless Dark Ribbon) ===== */
         .clients_section_wrap {
-            background: #f8f9fc;
-            padding: 70px 0 60px;
+            background: #080c14;
+            padding: 80px 0 70px;
             overflow: hidden;
             position: relative;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .clients_section_inner {
@@ -1324,23 +1450,24 @@
 
         .clients_label {
             display: inline-block;
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Space Mono', monospace;
             font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 3px;
+            font-weight: 700;
+            letter-spacing: 2px;
             text-transform: uppercase;
             color: #38a9ff;
             background: rgba(56, 169, 255, 0.1);
-            padding: 5px 16px;
+            border: 1px solid rgba(56, 169, 255, 0.25);
+            padding: 6px 18px;
             border-radius: 20px;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
         }
 
         .clients_title {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: clamp(26px, 4vw, 38px);
+            font-size: clamp(28px, 4vw, 42px);
             font-weight: 700;
-            color: #0d1b2a;
+            color: #ffffff;
             margin: 0 0 16px;
             letter-spacing: -0.5px;
         }
@@ -1358,7 +1485,7 @@
             position: relative;
             overflow: hidden;
             width: 100%;
-            padding: 10px 0;
+            padding: 15px 0;
         }
 
         .clients_marquee_wrapper::before,
@@ -1366,7 +1493,7 @@
             content: '';
             position: absolute;
             top: 0;
-            width: 120px;
+            width: 140px;
             height: 100%;
             z-index: 2;
             pointer-events: none;
@@ -1374,21 +1501,21 @@
 
         .clients_marquee_wrapper::before {
             left: 0;
-            background: linear-gradient(to right, #f8f9fc 0%, transparent 100%);
+            background: linear-gradient(to right, #080c14 0%, transparent 100%);
         }
 
         .clients_marquee_wrapper::after {
             right: 0;
-            background: linear-gradient(to left, #f8f9fc 0%, transparent 100%);
+            background: linear-gradient(to left, #080c14 0%, transparent 100%);
         }
 
         /* The scrolling track */
         .clients_marquee_track {
             display: flex;
             align-items: center;
-            gap: 32px;
+            gap: 28px;
             width: max-content;
-            animation: clientsScroll 28s linear infinite;
+            animation: clientsScroll 30s linear infinite;
         }
 
         .clients_marquee_track:hover {
@@ -1410,52 +1537,56 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #fff;
-            border: 1px solid rgba(0, 0, 0, 0.07);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 14px;
-            padding: 20px 40px;
-            min-width: 220px;
-            height: 100px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+            padding: 20px 36px;
+            min-width: 210px;
+            height: 95px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
             flex-shrink: 0;
             text-decoration: none;
         }
 
         .client_logo_card:hover {
-            transform: translateY(-6px) scale(1.03);
-            box-shadow: 0 12px 32px rgba(56, 169, 255, 0.18), 0 4px 12px rgba(0, 0, 0, 0.08);
-            border-color: rgba(56, 169, 255, 0.2);
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(56, 169, 255, 0.4);
+            box-shadow: 0 12px 30px rgba(56, 169, 255, 0.15), 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .client_logo_card img {
-            max-width: 160px;
-            max-height: 60px;
+            max-width: 150px;
+            max-height: 55px;
             width: auto;
             height: auto;
             object-fit: contain;
-            filter: grayscale(30%);
-            transition: filter 0.3s ease;
+            filter: brightness(0.9) grayscale(20%);
+            transition: filter 0.3s ease, transform 0.3s ease;
         }
 
         .client_logo_card:hover img {
-            filter: grayscale(0%);
+            filter: brightness(1.05) grayscale(0%);
+            transform: scale(1.04);
         }
 
         @media (max-width: 768px) {
             .clients_section_wrap {
-                padding: 50px 0 40px;
+                padding: 60px 0 50px;
             }
 
             .client_logo_card {
-                min-width: 170px;
-                height: 80px;
-                padding: 15px 24px;
+                min-width: 160px;
+                height: 75px;
+                padding: 12px 20px;
             }
 
             .client_logo_card img {
-                max-width: 120px;
-                max-height: 45px;
+                max-width: 110px;
+                max-height: 40px;
             }
 
             .clients_marquee_wrapper::before,
@@ -1484,7 +1615,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="footer_widget">
-                        <h2>Categories</h2>
+                        <h3>Categories</h3>
                         <div class="footer_nav">
                             <ul>
                                 <li><a href="website-development-chennai.html">Web Development</a></li>
@@ -1498,7 +1629,7 @@
                 <!-- footer widget -->
                 <div class="col-lg-5 col-md-6 col-sm-12">
                     <div class="footer_widget">
-                        <h2>Our Contact</h2>
+                        <h3>Our Contact</h3>
                         <div class="footer_nav">
                             <ul>
                                 <li>
@@ -1517,11 +1648,8 @@
     </footer>
     <!-- footer area end -->
     <!-- partial:index.partial.html -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <a href="https://api.whatsapp.com/send?phone=917904441839&text=Hello%21%20I%20would%20like%20to%20request%20more%20information%20about%20website%20development%20services."
-        class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
+    <a href="https://api.whatsapp.com/send?phone=917904441839&text=Hello%21%20I%20would%20like%20to%20request%20more%20information%20about%20website%20development%20services." class="float" target="_blank" rel="noopener noreferrer" aria-label="Chat with Eantrax on WhatsApp">
+        <i class="fa-brands fa-whatsapp my-float"></i>
     </a>
 
     <!-- partial -->
@@ -1532,7 +1660,7 @@
                 <!-- copyright text -->
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="copyright_text text-center">
-                        <p>Copyright Â©eantrax all right reserved.</p>
+                        <p>Copyright &copy; Eantrax. All rights reserved.</p>
                     </div>
                 </div>
             </div>
@@ -1561,25 +1689,94 @@
     <script src="assets/js/scrollup.min.js"></script>
     <!-- theme js -->
     <script src="assets/js/theme.js"></script>
+    <!-- Modern Motion: Lenis Smooth Scroll & GSAP ScrollTrigger -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script>
-        /* Particles.js initialization */
-        if (document.getElementById('particles-js')) {
-            particlesJS('particles-js', {
-                "particles": {
-                    "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-                    "color": { "value": "#175CFF" },
-                    "shape": { "type": "circle" },
-                    "opacity": { "value": 0.5, "random": false },
-                    "size": { "value": 3, "random": true },
-                    "line_linked": { "enable": true, "distance": 150, "color": "#175CFF", "opacity": 0.4, "width": 1 },
-                    "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+        // Lenis Smooth Scrolling Engine
+        if (typeof Lenis !== 'undefined' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            const lenis = new Lenis({
+                duration: 1.1,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                orientation: 'vertical',
+                gestureOrientation: 'vertical',
+                smoothWheel: true,
+                wheelMultiplier: 0.95
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+
+            // Connect Lenis to GSAP ScrollTrigger
+            if (typeof ScrollTrigger !== 'undefined') {
+                lenis.on('scroll', ScrollTrigger.update);
+                gsap.ticker.add((time) => {
+                    lenis.raf(time * 1000);
+                });
+                gsap.ticker.lagSmoothing(0);
+            }
+        }
+
+        // GSAP ScrollTrigger Stagger Reveals & Micro-Interactions
+        if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Reveal Strategy Call Card
+            gsap.from('.strategy_call_box', {
+                scrollTrigger: {
+                    trigger: '.strategy_call_section',
+                    start: 'top 85%',
+                    once: true
                 },
-                "interactivity": {
-                    "detect_on": "canvas",
-                    "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true },
-                    "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } }, "push": { "particles_nb": 4 } }
+                y: 35,
+                opacity: 0,
+                duration: 0.9,
+                ease: 'power3.out'
+            });
+
+            // Reveal Core Service Cards
+            gsap.from('.single_service_area', {
+                scrollTrigger: {
+                    trigger: '#core-services',
+                    start: 'top 75%',
+                    once: true
                 },
-                "retina_detect": true
+                y: 40,
+                opacity: 0,
+                duration: 0.85,
+                stagger: 0.12,
+                ease: 'power3.out'
+            });
+
+            // Reveal Case Study Cards
+            gsap.from('.case_studies_section .card', {
+                scrollTrigger: {
+                    trigger: '.case_studies_section',
+                    start: 'top 75%',
+                    once: true
+                },
+                y: 40,
+                opacity: 0,
+                duration: 0.85,
+                stagger: 0.15,
+                ease: 'power3.out'
+            });
+
+            // Reveal CTA Premium Box
+            gsap.from('.cta_premium', {
+                scrollTrigger: {
+                    trigger: '.cta_premium',
+                    start: 'top 85%',
+                    once: true
+                },
+                y: 30,
+                opacity: 0,
+                duration: 0.9,
+                ease: 'power3.out'
             });
         }
     </script>

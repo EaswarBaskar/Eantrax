@@ -23,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'admin@eantrax.com'; // Your domain email
-        $mail->Password = 'YOsxient';  // Enter your password here
+        $mail->Username = getenv('SMTP_USERNAME') ?: 'admin@eantrax.com';
+        $mail->Password = getenv('SMTP_PASSWORD') ?: ''; // Set via server environment variable; NEVER hardcode plaintext passwords here
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 

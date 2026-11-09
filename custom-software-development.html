@@ -148,9 +148,9 @@
                                 <a href="contact.html" class="btn_header">Get Started</a>
                             </div>
                             <!-- Mobile Toggle -->
-                            <div class="mobile_menu_o d-lg-none">
+                            <button class="mobile_menu_o d-lg-none" aria-label="Toggle mobile menu" aria-expanded="false" type="button" style="background:transparent; border:none; padding:8px; color:#fff;">
                                 <i class="fas fa-bars openclass"></i>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
 
     <!-- Mobile Sidebar -->
     <div class="mobile_menu_inner">
-        <div class="mobile_close_btn closeclass"><i class="fas fa-times"></i></div>
+        <button class="mobile_close_btn closeclass" aria-label="Close mobile menu" type="button" style="background:transparent; border:none; padding:8px; color:#fff;"><i class="fas fa-times"></i></button>
         <div class="mobile_menu_logo">
             <a href="index.html"><img src="assets/img/logo-02.png" alt="Eantrax Logo"></a>
         </div>
@@ -357,11 +357,11 @@
     </section>
     <!-- service area end -->
     <!-- Innovation Vision Section -->
-    <section class="section_padding" style="background-color: #f8faff;">
+    <section class="section_padding vision_innovation_section" style="background-color: #080c14; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
         <div class="container">
             <div class="section_title_area text-center mb-5 wow fadeInUp" data-wow-delay=".2s">
-                <h2>Vision & Innovation</h2>
-                <p>Engineering the future with intelligence and purpose</p>
+                <h2 style="color: #fff;">Vision & Innovation</h2>
+                <p style="color: rgba(255, 255, 255, 0.7);">Engineering the future with intelligence and purpose</p>
             </div>
             <div class="row g-4 justify-content-center">
                 <!-- Vision Card 1 -->
@@ -369,13 +369,15 @@
                     <div class="testimonial_card_premium h-100">
                         <div class="testimonial_icon_quote"><i class="fas fa-quote-left"></i></div>
                         <p class="testimonial_text_p">"Time is money. AI is the machine that prints more of it. At
-                            Eantrax, we don't just build fastÃ¢â‚¬â€we build right."</p>
-                        <hr class="my-4" style="opacity: 0.1;">
+                            Eantrax, we don't just build fast &mdash; we build right."</p>
+                        <hr class="my-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
                         <div class="testimonial_user_meta">
-                            <img src="assets/img/ai-brand3.png" alt="Founder Icon">
+                            <div class="testimonial_avatar_badge" style="width: 48px; height: 48px; border-radius: 50%; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.3); display: flex; align-items: center; justify-content: center; margin-right: 14px; flex-shrink: 0;">
+                                <img src="assets/img/ai-brand3.png" alt="Founder Icon" style="width: 24px; height: 24px; object-fit: contain;">
+                            </div>
                             <div>
-                                <h6>Easwar Somasundaram</h6>
-                                <small>Founder, Eantrax</small>
+                                <h6 style="color: #f1f5f9; font-weight: 700; margin: 0 0 2px;">Easwar Somasundaram</h6>
+                                <small style="color: #94a3b8; font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase;">Founder, Eantrax</small>
                             </div>
                         </div>
                     </div>
@@ -386,13 +388,14 @@
                         <div class="testimonial_icon_quote"><i class="fas fa-quote-left"></i></div>
                         <p class="testimonial_text_p">"AI is about amplifying human ingenuity with intelligent
                             technology. The challenge is redesigning work to collaborate with it."</p>
-                        <hr class="my-4" style="opacity: 0.1;">
+                        <hr class="my-4" style="border-top: 1px solid rgba(255,255,255,0.08);">
                         <div class="testimonial_user_meta">
-                            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=100"
-                                alt="Tech Wisdom">
+                            <div class="testimonial_avatar_badge" style="width: 48px; height: 48px; border-radius: 50%; background: rgba(139, 92, 246, 0.15); border: 1px solid rgba(139, 92, 246, 0.3); display: flex; align-items: center; justify-content: center; margin-right: 14px; flex-shrink: 0;">
+                                <i class="fas fa-brain" style="color: #8b5cf6; font-size: 20px;"></i>
+                            </div>
                             <div>
-                                <h6>Industry Insights</h6>
-                                <small>Microsoft Vision</small>
+                                <h6 style="color: #f1f5f9; font-weight: 700; margin: 0 0 2px;">Industry Insights</h6>
+                                <small style="color: #94a3b8; font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase;">Microsoft Vision</small>
                             </div>
                         </div>
                     </div>
@@ -452,8 +455,7 @@
     <!-- partial:index.partial.html -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <a href="https://api.whatsapp.com/send?phone=917904441839&text=Hello%21%20I%20would%20like%20to%20request%20more%20information%20about%20website%20development%20services."
-        class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=917904441839&text=Hello%21%20I%20would%20like%20to%20request%20more%20information." class="float" target="_blank" rel="noopener noreferrer" aria-label="Chat with Eantrax on WhatsApp">
 
         <i class="fa fa-whatsapp my-float"></i>
         

@@ -35,9 +35,6 @@
 }
 /*============ Laptop Device ===========*/
 @media (min-width:1024px) and (max-width:1365px){
-    h2, h2 a {
-        font-size: 16px;
-    }
     .main_menu_area {
         padding: 0px 10px;
     }
@@ -91,14 +88,6 @@
 
 /*============= Tablet Large device ===============*/
 @media (min-width:992px) and (max-width:1023px){
-    h2, h2 a {
-        font-size: 16px;
-    }
-    h3,
-    h3 a
-    {
-        font-size: 16px;
-    }
     .main_menu_area {
         padding: 0px 10px;
     }
@@ -209,7 +198,7 @@
         padding: 10px 0;
     }
      /* main nav area css */
-     .main_menu_area{
+     .inner_main_nav_area{
         display: none;
     }
     /* slider area css */
@@ -318,7 +307,7 @@
         padding: 10px 0;
     }
      /* main nav area css */
-     .main_menu_area{
+     .inner_main_nav_area{
         display: none;
     }
     /* slider area css */
