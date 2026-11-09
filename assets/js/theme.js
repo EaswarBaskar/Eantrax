@@ -19,19 +19,22 @@ $(function(){
   
     /*==== popup mobile menu  ====*/
     
-    var mrightma = $(".mobile_menu_o i.openclass");
-    var mrightmi = $(".mobile_menu_o i.closeclass");
+    var mobileBtn = $(".mobile_menu_o");
     var mrightmir = $(".mobile_menu_inner");
     var mobile_ov = $(".mobile_overlay");
-    mrightma.on('click', function() {
+    mobileBtn.on('click', function(e) {
+      e.preventDefault();
       mrightmir.addClass('tx-s-open');
       mobile_ov.addClass('mactive');
+      $(this).attr('aria-expanded', 'true');
     });
     
     // Close on close button or overlay click
-    $(".mobile_close_btn, .mobile_overlay").on('click', function() {
+    $(".mobile_close_btn, .mobile_overlay").on('click', function(e) {
+      e.preventDefault();
       mrightmir.removeClass('tx-s-open');
       mobile_ov.removeClass('mactive');
+      mobileBtn.attr('aria-expanded', 'false');
     });
 
     // Handle nested sub-menus in mobile drawer
